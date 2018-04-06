@@ -1,0 +1,17 @@
+{
+    "name": "takne/poubelle",
+    "description": "test du hackathon",
+    "authors": [
+        {
+            "name": "Clement PAQUIN",
+            "email": "clement.paquin@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "": "/Poubelle"
+
+    }
+
+
+}
