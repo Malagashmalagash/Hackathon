@@ -2,9 +2,9 @@
 
 session_start();
 
-    $vie1 = 100;
+    $vie1 = 20;
     $vieFinale1 = (($vie1/100)*432);
-    $vie2 = 90;
+    $vie2 = 50;
     $vieFinale2 = (($vie2/100)*432);
 
 
@@ -51,7 +51,7 @@ session_start();
 
                 <div class="row3">
                     <div class="col-md-2">
-                        <a href=""><img class="img-responsive" src="images/arrowT.png"></a>
+                        <a href=><img class="img-responsive" src="images/arrowT.png"></a>
                     </div>
                     <div class="col-md-2 col-md-offset-8">
                         <a href=""><img class="img-responsive" src="images/arrowT.png"></a>
@@ -75,7 +75,6 @@ session_start();
                         <a href=""><img class="img-responsive" src="images/arrowB.png"></a>
                 </div>
                 </div>
-
             </div>
 
             <div class="col-sm-6 col-md-3 col-md-offset-1">
@@ -96,6 +95,12 @@ session_start();
             <div class="col-sm-6 col-md-3 col-md-offset-6">
                 <div class="col-xs-12 hauteur"></div>
                 <div class="col-xs-12 hauteur2" style="max-width:<?=$vieFinale2?>px"></div>
+            </div>
+
+        </div>
+        <div class="row ">
+            <div class="col-md-2 col-md-offset-5">
+                <a href="Log.php"><button class="btn btn-warning text-center">Clic to continue</button></a>
             </div>
         </div>
     </div>
