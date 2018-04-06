@@ -71,15 +71,15 @@ if (!empty($_GET['i'])){
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <<!-- Latest compiled and minified CSS & JS -->
+    <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../src/CSS/css-charselect.css">
+    <link rel="stylesheet" href="CSS/css-charselect.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-<div class="container-fluid BGC">
+<div class="container-fluid">
     <div class="container">
 
         <h1 class="text-center">SSF4 : bisounour's edition</h1>
@@ -88,29 +88,29 @@ if (!empty($_GET['i'])){
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="<?php if (empty($_GET)) {echo "../src/images/Ryurender.png";} else { echo $_SESSION['heros'][$_SESSION['heros']['player1']['i']][6];}?>" alt="">
+                    <img src="<?php if (empty($_GET)) {echo "images/Ryurender.png";} else { echo $_SESSION['heros'][$_SESSION['heros']['player1']['i']][6];}?>" alt="">
                     <div class="caption color">
                         <h3 class="color"><?php if (empty($_GET)) {echo "Ryu";} else { echo $_SESSION['heros'][$_SESSION['heros']['player1']['i']][1];}?></h3>
-                        <p class="color">Surname :<?php if (empty($_GET)) {echo "Japan";} else { echo $_SESSION['heros'][$_SESSION['heros']['player1']['i']][5];}?></p>
+                        <p class="color">Surname :<?php if (empty($_GET)) {echo "Satsui no Hado ni Mezameta Ryu";} else { echo $_SESSION['heros'][$_SESSION['heros']['player1']['i']][5];}?></p>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-6">
                 <div class="thumbnail TNVS">
-                    <img src="../src/images/VS.png" alt="">
+                    <img src="images/VS.png" alt="">
                     <?php if ($getCount == 2):  ?>
-                        <a class="btn btn-default" href="FightTheDeath.php" role="button">FIGHT</a>
+                        <a class="btn btn-danger" href="FightTheDeath.php" role="button">FIGHT</a>
                     <?php endif ?>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-3">
                     <div class="thumbnail">
-                        <img src="<?php if ($getCount != 2) {echo "../src/images/Cammyrender.png";} else { echo $_SESSION['heros'][$_SESSION['heros']['player2']['i']][6];}?>" alt="">
+                        <img src="<?php if ($getCount != 2) {echo "images/Cammyrender.png";} else { echo $_SESSION['heros'][$_SESSION['heros']['player2']['i']][6];}?>" alt="">
                         <div class="caption color">
-                            <h3 class="color"><?php if ($getCount != 2) {echo "Ryu";} else { echo $_SESSION['heros'][$_SESSION['heros']['player2']['i']][1];}?></h3>
-                            <p class="color">Surname :<?php if ($getCount != 2) {echo "Japan";} else { echo $_SESSION['heros'][$_SESSION['heros']['player2']['i']][5];}?></p>
+                            <h3 class="color"><?php if ($getCount != 2) {echo "Cammy";} else { echo $_SESSION['heros'][$_SESSION['heros']['player2']['i']][1];}?></h3>
+                            <p class="color">Surname :<?php if ($getCount != 2) {echo "Canon Spike";} else { echo $_SESSION['heros'][$_SESSION['heros']['player2']['i']][5];}?></p>
                         </div>
                     </div>
                 </div>

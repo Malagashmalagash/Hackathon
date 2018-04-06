@@ -2,10 +2,11 @@
 
 session_start();
 
-    $vie1 = 50;
+    $vie1 = 100;
     $vieFinale1 = (($vie1/100)*432);
-    $vie2 = 100;
+    $vie2 = 90;
     $vieFinale2 = (($vie2/100)*432);
+
 
 ?>
 
@@ -19,7 +20,7 @@ session_start();
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../src/CSS/css-fightthedeath.css">
+    <link rel="stylesheet" href="CSS/css-fightthedeath.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -29,9 +30,9 @@ session_start();
 
         <div class="row text-center">
 
-            <div class="col-sm-6 col-md-3">
+            <div class="col-sm-6 col-md-3 margL">
                 <div class="thumbnail">
-                    <img src="<?=$_SESSION['player1']['image']?>" alt="">
+                    <img class="img-responsive" src="<?=$_SESSION['player1']['image']?>" alt="">
                     <div class="caption color">
                         <h3 class="color"><?=$_SESSION['player1']['name']?></h3>
                         <p class="color">Surname : <?=$_SESSION['player1']['alias']?></p>
@@ -44,41 +45,41 @@ session_start();
                 <div class="row1"></div>
                 <div class="row">
                     <div class="thumbnail TNVS">
-                        <img src="../src/images/VS.png" alt="">
+                        <img src="images/VS2.png" alt="">
                     </div>
                 </div>
 
                 <div class="row3">
                     <div class="col-md-2">
-                        <a href=""><img class="img-responsive" src="../src/images/arrowT.png"></a>
+                        <a href=""><img class="img-responsive" src="images/arrowT.png"></a>
                     </div>
                     <div class="col-md-2 col-md-offset-8">
-                        <a href=""><img class="img-responsive" src="../src/images/arrowT.png"></a>
+                        <a href=""><img class="img-responsive" src="images/arrowT.png"></a>
                 </div>
                 </div>
 
                 <div class="row4">
                     <div class="col-md-2">
-                        <a href=""><img class="img-responsive" src="../src/images/arrowR.png"></a>
+                        <a href=""><img class="img-responsive" src="images/arrowR.png"></a>
                     </div>
                     <div class="col-md-2 col-md-offset-8">
-                        <a href=""><img class="img-responsive" src="../src/images/arrowL.png"></a>
+                        <a href=""><img class="img-responsive" src="images/arrowL.png"></a>
                     </div>
                 </div>
 
                 <div class="row5">
                     <div class="col-md-2">
-                        <a href=""><img class="img-responsive" src="../src/images/arrowB.png"></a>
+                        <a href=""><img class="img-responsive" src="images/arrowB.png"></a>
                     </div>
                     <div class="col-md-2 col-md-offset-8">
-                        <a href=""><img class="img-responsive" src="../src/images/arrowB.png"></a>
+                        <a href=""><img class="img-responsive" src="images/arrowB.png"></a>
                 </div>
                 </div>
 
             </div>
 
             <div class="col-sm-6 col-md-3 col-md-offset-1">
-                <div class="thumbnail ">
+                <div class="thumbnail margR">
                     <img src="<?=$_SESSION['player2']['image']?>" alt="">
                     <div class="caption ">
                         <h3 class="color"><?=$_SESSION['player2']['name']?></h3>

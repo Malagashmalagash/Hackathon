@@ -1,7 +1,7 @@
 .hauteur{
     width: 432px;
     height: 50px;
-    background-color: darkred;
+    background-color: darkviolet;
     border-radius: 50px;
     position: relative;
 }
@@ -9,7 +9,7 @@
 .hauteur2{
     max-width: 432px;
     height: 50px;
-    background-color: darkgreen;
+    background-color: orange;
     border-radius: 50px;
     position: absolute;
 }
