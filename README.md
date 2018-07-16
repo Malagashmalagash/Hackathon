@@ -2,7 +2,7 @@
 
 ## Description
 - Groupe de 4 personnes, sur une période de 24h.
-- Créer un petit jeu en PHP procédural, grace à l'utilisation d'un API.
+- Créer un jeu en PHP procédural, grace à l'utilisation d'un API.
 
 
 ## But recherché
